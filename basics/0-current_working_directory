@@ -1,2 +1,2 @@
 #!/bin/bash
-/tmp/correction/8997474092705950646933605085829444783057_5/2019/6160/basics
+current_directory=$(pwd)
