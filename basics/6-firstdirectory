@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /basics/my_first_directory/
+mkdir /alu-shell/basics/my_first_directory/
