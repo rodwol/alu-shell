@@ -6,9 +6,10 @@ if [ "$1" = "start" ];then
 	echo $! > /var/run/my_process.pid
 	echo "manage_my_process started"
 elif [ "$1" = "stop" ];then
-	killall -9 "$(pgrep -f manage_my_process)"
+	killall "$(pgrep -f manage_my_process)"
 	rm -f /var/run/my_process.pid
 	echo "manage_my_process stopped"
+	echo "bash"
 elif [ "$1" = "restart" ];then
 	kill "$(pgrep -f manage_my_process)"
         rm -f /var/run/my_process.pid
