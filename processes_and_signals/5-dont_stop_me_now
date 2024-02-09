@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #a Bash script that stops 4-to_infinity_and_beyond process
 
-pgrep 4-to_infinity_and_beyond | while read -r pid
+pgrep -f 4-to_infinity_and_beyond | while read -r pid
 do
    
-    kill $pid
+    kill "$pid"
 done
